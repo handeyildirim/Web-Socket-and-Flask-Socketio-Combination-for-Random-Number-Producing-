@@ -10,7 +10,7 @@ https://github.com/miguelgrinberg/Flask-SocketIO
 To use - please clone the repository and then set up your virtual environment using the requirements.txt file with pip and virtualenv. You can achieve this with:
 
 
-    git clone https://github.com/shanealynn/async_flask
+    git clone https://github.com/handeyildirim/Web-Socket-and-Flask-Socketio-Combination-for-Random-Number-Producing-
     cd async_flask
     virtualenv flaskiotest
     ./flaskiotest/Scripts/activate
