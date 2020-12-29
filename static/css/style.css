@@ -1,0 +1,69 @@
+legend {
+    font-size:  1.4em;
+    font-weight:  bold;
+    position:  relative;
+    top:  -.4em;
+}
+
+body{
+    background-color: #9d9d9d;
+}
+
+table.sig_tab_main {
+    /*border-collapse: collapse;*/
+    table-layout: fixed;
+    overflow-y: scroll;
+    /*border: 1px solid black;*/
+    width: 80%;
+    margin-bottom: 35px;
+}
+
+table.sig_tab {
+    border-collapse: collapse;
+    table-layout: fixed;
+    border: 2px solid black;
+    width: 100%;
+    height: 300px;
+    margin-right: 8px;
+}
+
+tr:nth-child(even) {
+    background: #bcbaad
+}
+
+tr:nth-child(odd) {
+    background: #ffffff
+}
+
+#sig_tab0,#sig_tab1,#sig_tab2 {
+    border: 2px solid black;
+    table-layout: fixed;
+    height: 42px;
+}
+
+th,td {
+    border: 1px solid black;
+}
+
+#signal_table0,#signal_table1,#signal_table2 {
+    word-break: break-all;
+}
+
+footer {
+    margin-top: 15px;
+}
+
+#rebug_logo {
+    margin-left: 450px;
+    width : 120px;
+    height : 100px;
+}
+
+div {
+    border: 2px solid black;
+    width: 80%;
+    height: 300px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    display: block;
+}

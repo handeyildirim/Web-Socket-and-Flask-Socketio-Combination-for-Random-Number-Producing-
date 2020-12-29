@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+    <script src="static/js/app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REBUG ONLINE GUI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <script src="//code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js" integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<h1 id="headline">REBUG GmbH</h1>
+
+    <!-- Header -->
+    <header id="header">
+        <nav>
+            <ul>
+                <li><a href="#table1">Table1</a></li>
+                <li><a href="#table2">Table2</a></li>
+                <li><a href="#table3">Table3</a></li>
+			    <!--<li><a href="#elements">Elements</a></li>-->
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+
+    <legend><img src="../static/images/klang.png" style="width: 30px; height: 25px" alt="signal_symbol">SIGNAL LIST</legend>
+
+    <table class="sig_tab_main" ;>
+	    <tr>
+            <!-- Signal Table 0 -->
+		    <td>
+			    <table class="sig_tab" ;>
+				    <thead>
+					    <tr id="sig_tab0">
+						    <th style="background-color: lightcyan;">Signal Name</th>
+						    <th style="background-color: lightcyan;">Value</th>
+					    </tr>
+				    </thead>
+
+				    <tbody id='signal_table0'>
+				    </tbody>
+			    </table>
+		    </td>
+
+            <!-- Signal Table 1 -->
+            <td>
+                <table class="sig_tab">
+                    <thead>
+                        <tr id="sig_tab1">
+                            <th style="background-color: lightcyan;">Signal Name</th>
+                            <th style="background-color: lightcyan;">Value</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id='signal_table1'>
+                    </tbody>
+                </table>
+            </td>
+
+            <!-- Signal Table 2 -->
+            <td>
+                <table class="sig_tab">
+                    <thead>
+                        <tr id="sig_tab2">
+                            <th style="background-color: lightcyan;" >Signal Name</th>
+                            <th style="background-color: lightcyan;">Current Value</th>
+                            <th style="background-color: lightcyan;">Max Value</th>
+                            <th style="background-color: lightcyan;">Min Value</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id='signal_table2'>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <legend>LOG</legend>
+
+    <div class="container" id="content">
+        <div class="row">
+            <h3>Receive Number list:</h3>
+            <div id="log">
+            </div> <!-- /#log -->
+        </div>
+    </div>
+
+    <footer>
+        <img src="../static/images/rebuglogo.jpg" id="rebug_logo" alt="rebug_logo">
+        <br>
+        This online user interface was created for Rebug GmbH. To learn more about web design, visit
+            <a href="http://www.rebug.org/">Rebug GmbH</a>
+    </footer>
+
+
+</body>
+</html>
